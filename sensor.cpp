@@ -85,7 +85,7 @@ void handleSensorValue(int value)
 void mainLoop(void)
 {
     int sensorValue;
-    int status = 1;
+    int status = -1;
     while (1) {
         status = readSensor(&sensorValue);
         if (status == STATUS_STOPPED) { /* FIX: == instead of = */
