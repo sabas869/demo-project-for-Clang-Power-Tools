@@ -71,7 +71,7 @@ void reportSensorFailure()
 
 void handleSensorValue(int value)
 {
-    int index = 0;
+    int index = -1;
     initialize();
     if (value >= 0 && value <= 10) { /* FIX: handle value < 0 */
         index = VALUE_LOW_MSG;
